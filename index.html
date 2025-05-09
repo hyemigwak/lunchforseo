@@ -56,7 +56,7 @@
   <main>
     <section class="py-5" style="background-color: #FAE100; color: black;">
       <div class="container text-center">
-        <h1 class="display-4 fw-bold">서영이의 점심 메뉴 고르기</h1>
+        <h1 class="display-4 fw-bold">서영이의 저녁 메뉴 고르기</h1>
         <p class="lead fs-4">오늘은 뭘 먹을까?</p>
       </div>
     </section>
@@ -89,18 +89,20 @@
   </footer>
 
   <script>
-    const menus = ["김치찌개", "된장찌개", "비빔밥", "돈까스", "제육볶음", "냉면", "샐러드", "김밥", "햄버거"];
+    // const menus = ["김치찌개", "된장찌개", "비빔밥", "돈까스", "제육볶음", "냉면", "샐러드", "김밥", "햄버거"];
+    const menus = ["부대찌개"];
 
     const menuImageMap = {
-      "김치찌개": "kimchi.jpg",
-      "된장찌개": "doenjang.jpg",
-      "비빔밥": "bibimbap.jpg",
-      "돈까스": "tonkatsu.jpg",
-      "제육볶음": "jeyuk.jpg",
-      "냉면": "naengmyeon.jpg",
-      "샐러드": "salad.jpg",
-      "김밥": "kimbap.jpg",
-      "햄버거": "burger.jpg"
+      "부대찌개": "boodae.jpg",
+      // "김치찌개": "kimchi.jpg",
+      // "된장찌개": "doenjang.jpg",
+      // "비빔밥": "bibimbap.jpg",
+      // "돈까스": "tonkatsu.jpg",
+      // "제육볶음": "jeyuk.jpg",
+      // "냉면": "naengmyeon.jpg",
+      // "샐러드": "salad.jpg",
+      // "김밥": "kimbap.jpg",
+      // "햄버거": "burger.jpg"
     };
 
     function recommendMenu() {
@@ -141,7 +143,7 @@
     }
 
     function askWho() {
-      const people = ["재근"];
+      const people = ["재근", "민석"];
       const whoResultEl = document.getElementById("who-result");
       const randomIndex = Math.floor(Math.random() * people.length);
       const selectedPerson = people[randomIndex];
